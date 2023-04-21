@@ -1,0 +1,96 @@
+learning_log$
+Step1:
+Crate an environment
+python -m venv ll_env
+
+Step 2 :
+Activate it :
+source ll_env/bin/activate
+
+Step 3:
+Install Django
+pip install django
+
+Step 4: Create a project
+django-admin startproject {project_name} .
+
+Step 5
+Crete a DB
+python manage.py migrate
+
+Step 6
+Viewing the porject
+python manage.py runserver
+
+Step 7
+Start up the app
+python manage.py startapp
+
+Step 8
+Define your models
+Add models in the models.py
+
+Register in admin.py
+#Super important !!!! I forgot admin.site.register instaed I did admin.register
+admin.site.register(Pizza)
+admin.site.register(Toppings)
+
+Step 9
+Activate your models by registerning it int he settings.py
+INSTALLED_APPS = [
+    # My apps
+    'learning_logs',
+
+    # Default django apps.
+    'django.contrib.admin',
+    --snip--
+]
+
+Step 10
+Start your app
+
+   learning_log$ source ll_env/bin/activate
+   (ll_env)learning_log$ python manage.py startapp learning_logs
+
+Step 10
+Tell django to update the DB with the model added
+python manage.py makemigrations {project_name}
+
+Step 11
+Make the actual modifications
+python manage.py migrate
+
+Step 12
+Setting up a super user
+python manage.py createsuperuser
+
+Step 13
+Register objects in admin
+Register it in the admin.py
+
+Step 14
+Test in Djanjo shell
+python manage.py shell
+from orlando_pizzas.models import Pizza
+Pizza.objects.all()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   (ll_env)learning_log$ pip install django
+   (ll_env)learning_log$ django-admin startproject learning_log .
+   python manage.py migrate
