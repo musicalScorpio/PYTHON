@@ -1,0 +1,156 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 \
+# Example of a Python class, populate it and then call it.\
+\
+class Person(object):\
+    import datetime\
+    def __init__(self, name):\
+        #create a person with name name\
+         self.name = name\
+         try:\
+            firstBlank = name.rindex(' ')\
+            self.lastName = name[firstBlank+1:]\
+            self.firstName =name[:firstBlank]\
+         except:\
+            self.lastName = name\
+            self.birthday = None\
+    def getLastName(self):\
+         #return self's last name\
+         return self.lastName\
+    def getFirstName(self):\
+         #return self's first name\
+         return self.firstName\
+    def setBirthday(self, birthDate):\
+         #assumes birthDate is of type datetime.date \
+         #sets self's birthday to birthDate\
+         assert type(birthDate) == datetime.date\
+         self.birthday = birthDate\
+    def getAge(self):\
+         #assumes that self's birthday has been set\
+         #returns self's current age in days\
+         assert self.birthday != None\
+         return (datetime.date.today() - self.birthday).days\
+    def __lt__(self, other):\
+         #return True if self's name is lexicographically greater\
+         #than other's name, and False otherwise\
+         if self.lastName == other.lastName:\
+            return self.name < other.name\
+         return self.lastName < other.lastName\
+    def __str__(self):\
+    #return self's name\
+        return self.name\
+\
+#inheritance\
+\
+class IITPerson (Person):\
+    pass\
+\
+p = IITPerson('Sammy Mukherjee')\
+print (p)\
+print (type (p))\
+print (p.lastName)\
+print (p.getFirstName())\
+print (p.name)\
+\
+import datetime\
+import time\
+\
+class MITPerson (Person):\
+    #Will not change upon calling multiple times\
+    classVariable = datetime.datetime.now()\
+    #Classs Variable\
+    idNum =0\
+    def __init__ (self, name):\
+        self.name= name\
+        self.instancevalriable = datetime.datetime.now()\
+        MITPerson.idNum +=1\
+    \
+    def __str__ (self):\
+        toString ='!!!!!!! '+str(self.name) +' !!!!!!!'\
+        return toString\
+    #Think of this as a Comparator\
+    def __lt__ (self, other):\
+        return self.name < other.name\
+        \
+    def isStudent(self):\
+        return type(self)== UG or type(self)==G\
+\
+class UG(MITPerson):\
+    def __init__(self, name):\
+        MITPerson.__init__(self, name)\
+        self.year = None\
+    def setYear(self, year):\
+        if year > 5:\
+            raise OverflowError('Too many')\
+            self.year = year\
+    def getYear(self):\
+        return self.year\
+class G(MITPerson):\
+    pass\
+\
+class CourseList(object):\
+    def __init__(self, number): \
+         self.number = number\
+         self.students = []\
+    def addStudent(self, who):\
+        if not who.isStudent():\
+            raise TypeError('Not a student')\
+        if who in self.students:\
+            raise ValueError('Duplicate student')\
+        self.students.append(who)\
+    def remStudent(self, who):\
+        try:\
+         self.students.remove(who)\
+        except:\
+            print (str(who) + ' not in ' + self.number)\
+    def allStudents(self):\
+        for s in self.students:\
+        #Keeps track of where we are in the loop\
+         yield s\
+    def ugs(self):\
+        indx = 0\
+        while indx < len(self.students):\
+             if type(self.students[indx]) == UG:\
+                yield self.students[indx]\
+             indx += 1\
+\
+\
+p1 = MITPerson('Sammy')\
+print (p1.idNum)\
+print (type (p1))\
+\
+p = MITPerson('Nik')\
+print (p.idNum)\
+\
+list =[p1,p]\
+list.sort()\
+for i in list:\
+    print (str (i))\
+\
+#Yield keyword\
+# Python3 code to demonstrate\
+# yield keyword\
+\
+# generator to print even numbers\
+def print_even(test_list) :\
+	for i in test_list:\
+		if i % 2 == 0:\
+			yield i\
+\
+# initializing list\
+test_list = [1, 4, 5, 6, 7]\
+\
+# printing initial list\
+print ("The original list is : " + str(test_list))\
+\
+# printing even numbers\
+print ("The even numbers in list are : ", end = " ")\
+for j in print_even(test_list):\
+	print (j, end = " ")\
+\
+ }
