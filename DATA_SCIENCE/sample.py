@@ -72,7 +72,7 @@ print (tuple_list[0][0])
 #Parse a sentence and count the number os words in it.
 txt = 'Python is one of the most promising programming languages today. Due to the simplicity of Python syntax, many researchers and scientists prefer Python over many other languages.'
 #replace comma and period
-
+ 
 #txt = 'the the sam is is the best the'
 word_count = {}
 split_list = txt.replace('.',' ').replace(',',' ').split(' ')
