@@ -1,3 +1,10 @@
+
+'''
+author : Sam Mukherjee
+What we are trying to do here is to read up a file and then use pandas to rearracge the
+data and then gorup by certain identifiers.
+
+'''
 path = "excerpt.txt"
 with open(path,"r") as f:
   lst = [line.strip() for line in f if line.strip()]

@@ -118,7 +118,7 @@ accuracy = classifier.score(X_test, sentiment_test)
 print("Accuracy:", accuracy)
 
 #make predictions fo rnew data
-new_reviews = ['Old version of python is useless', 'Very good effort, but not five stars', 'Clear and concise']
+new_reviews = ['Old version of python is horrible', 'Very good effort, but not five stars', 'Clear and concise']
 X_new = vectorizer.transform(new_reviews)
 print(classifier.predict(X_new))
 
