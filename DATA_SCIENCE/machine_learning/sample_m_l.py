@@ -49,13 +49,38 @@ X_new = vectorizer.transform(new_reviews)
 print(classifier.predict(X_new))
 
 #stock
+import matplotlib.pyplot as plt
 import yfinance as yf
 tkr = yf.Ticker('AAPL')
 hist = tkr.history(period="1y")
+print('===')
+print(hist.dtypes)
+
+#Get the S&P as a reference
+import pandas_datareader.data as pdr
+from datetime import date, timedelta
+end = date.today()
+start = end - timedelta(days=365)
+index_data = pdr.get_data_stooq('^SPX', start, end)
+print(index_data.dtypes)
 
 
+index_data_no_tz = index_data.copy().tz_localize('EST')
+df = index_data_no_tz[['Close','Volume']]
+print(df)
 
+df = hist[['Close','Volume']]
+print(df)
 
+hist_no_tz= hist[['Close']]
+#index_data_n0_tz.index.tz = None
+
+#Joining Sand P and APPL
+index_data_no_tz_no_vol = index_data_no_tz.copy()[['Close']]
+index_data_no_tz_no_vol['Close'] = index_data_no_tz_no_vol['Close'].astype(str)
+df = hist_no_tz.join(index_data_no_tz_no_vol, rsuffix='__')
+#df = df[['Close','Volume','Close_idx','Volume_idx']]
+print(df)
 
 
 
