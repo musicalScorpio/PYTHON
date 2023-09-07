@@ -2,7 +2,7 @@
 '''
 author : Sam Mukherjee
 What we are trying to do here is to read up a file and then use pandas to rearracge the
-data and then gorup by certain identifiers.
+data and then group by certain identifiers.
 
 '''
 path = "excerpt.txt"
