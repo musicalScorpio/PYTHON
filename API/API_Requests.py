@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 from plotly.graph_objs import Bar
 from plotly import offline
 
+'''
+Simple example to quickly get started with the requests package. Here we request the starts of popular Git repos.
+
+'''
 class APiRequests:
     def __init__(self, url):
         self.url = url

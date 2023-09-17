@@ -1,5 +1,6 @@
 '''
 @author Sam Mukherjee
+Get the number of megacities goruped by State using matplotlib
 '''
 '''
 #Plots

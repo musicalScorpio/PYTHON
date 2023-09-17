@@ -11,7 +11,7 @@ results = []
 num_sides = number_of_die * 10
 frequency_map = {}
 
-for roll_num in range(50000):
+for roll_num in range(100):
    count_after_roll = 0
    for var in range(number_of_die):
       die = Die(num_sides)
