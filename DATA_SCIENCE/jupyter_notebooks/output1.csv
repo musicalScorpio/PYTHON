@@ -1,0 +1,141 @@
+,,,,DriverName
+,,,,count
+DriverName,Type,Title,DeliveryDate,
+abdalmpi,Inquiry,abdalmpi - Changes based on testing feedback,2023-08-01,1
+abdalmpi,Inquiry,abdalmpi - enhancements requested,2023-10-04,1
+abdgtwma,Inquiry,Abbott GLP TWM - orderTestStatus messages for off track samples,2023-04-21,1
+abdicqii,Inquiry,DDR abdicqii - check for orders every second during timeout,2023-06-23,1
+abdicqii,Inquiry,DDR abdicqii - parse control name for QC,2023-04-17,1
+abdicqii,Inquiry,DDR for abdicqii,2022-04-14,1
+abdicqii,Known Issue,abdicqii - Status messages are queued with no Specimen info,2023-03-30,1
+abdinfoi,Inquiry,abdinfoi - changes based on testing feedback,2022-11-15,1
+abimulti,Inquiry,ABI Driver Needs Logic to Translate Outgoing Worklist Positions for the 3730 and Incoming Specimen ID Column,2023-08-22,1
+abimulti,Inquiry,DDR - abimulti Enhancement Requests,2023-12-22,1
+bdcclrsi,Known Issue,Error 438 (Object doesn't support this property or method) on line 0 in procedure gLoadCommandBarResource of Module bdcclrsiModule,2023-04-17,1
+bdcclrsi,Known Issue,imtemp not using instnum as subscript - bdcclrsi,2023-11-30,1
+bdcectri,Inquiry,Group susceptibility results by AST source,2022-01-28,1
+bdcktlai,Inquiry,DDR bdcktlai - patient name in O.20.1,2023-02-09,1
+bdcktlai,Known Issue,KI for bdcktlai : lock issue,2023-02-07,1
+bkmc600i,Known Issue,<UNDEFINED>fluid+21^bkmc600iconfig,2023-05-31,1
+bkmc600i,Known Issue,DDR for bkmc600i,2022-11-16,1
+bkmcelmi,Inquiry,bkmcelmi - Build WBC result from Specimen Comment,2022-11-22,1
+bkmdxoni,Inquiry,DDR bkmdxoni - M103 messages,2022-09-14,1
+bkmdxoni,Inquiry,bkmdxoni - Parse Drawer and Rack Position values,2023-05-23,1
+bkmdxoni,Inquiry,bkmdxoni - Updates to M record handling based on testing,2022-11-22,1
+bkmdxoni,Known Issue,bkmdxoni - Driver does not separate order messages correctly,2022-07-01,1
+brlqccnq,Inquiry,Add IRIS compatibility to Bio Rad URT integration,2023-03-23,1
+brlqccnq,Inquiry,Add support for date/time conversion based on time zone,2023-02-14,1
+brlqccnq,Inquiry,DDR brlqccnq - better handling of reagent lot and calibrator information to URT with SP9,2023-11-17,1
+brlqccnq,Known Issue,brlqccnq - closing parent windows before child windows,2023-09-08,1
+brlqccnq,Known Issue,brlqccnq Error in parse - <NOLINE>qconcall+37^brlqccnqbuild,2023-06-27,1
+brlqccnq,Known Issue,brlqccnq causes IM to crash if QC Date/Time field is added to SM Workspace,2023-06-27,1
+bvimytci,Inquiry,DDR Myla HL7 bvimytci various changes,2022-10-28,1
+bvimytci,Inquiry,DDR bvimytci - string replace double quotes,2023-09-08,1
+capprfcl,Known Issue,capprfcl -  If machine doesn’t have mirror setup its stuck with “On Request” state,2022-10-31,1
+cliwnpel,Inquiry,Additional Profile Codes required for Blood Transfusion results,2022-07-13,1
+cliwnpel,Inquiry,Implement IT/RT configuration grid logic for microresult message building,2023-03-01,1
+copwlabi,Inquiry,Copan WASPLab - send media information when ordering By Protocol,2022-06-20,1
+copwlabi,Inquiry,Copan WASPlab - Add support for Clinisys workflows,2023-03-01,1
+copwlabi,Known Issue,Mapping of Test Code Sub ID always returns Default code instead of Ordered code,2022-06-13,1
+cphgnxpi,Inquiry,cphgnxpi - Merge changes from dev17 and dev18,2023-09-18,1
+crnfsi7l,Inquiry,Update Cerner FSI driver,2022-09-09,1
+crnshl7l,Inquiry,Build Isolate number into parent OBR.25 for ID / ID and Susceptibility results,2022-09-16,1
+crnshl7l,Inquiry,DDR - crnshl7l - add aliquot handling for Inpeco,2022-06-30,1
+cvndm96i,Inquiry,DDR for Cellavision Driver,2023-03-02,1
+diiccdfl,Known Issue,diiccdfl - LLP enhancement,2023-07-27,1
+diicfgdi,Known Issue,"Data Elements configured to be parsed using the ""By Line"" are not being parsed",2022-03-21,1
+diicfgdi,Known Issue,Error in build - <UNDEFINED>worklist+60^diicfgdibuild *field,2022-04-08,1
+diicfgdl,Known Issue,diicfgdl - When the driver generate one result file per specimen and if SendQ > 1 then the driver will generate result for the last specimen of the queue only,2023-07-28,1
+diicfgxi,Inquiry,DDR diicfgxi - configurable file names,2023-09-15,1
+diighl7l,Inquiry,DDR Internal Only - diighl7l will not error on the GT1 segment,2023-07-24,1
+diighl7l,Inquiry,DDR diighl7l - add UTF8 encoding option to non-file communications,2023-06-20,1
+diighl7l,Inquiry,DDR for diighl7l,2023-03-24,1
+diighl7l,Known Issue,ID and Susceptibility Micro Result 1st OBX is missing isolate and incorrectly formatted,2022-05-26,1
+diihl7ml,Inquiry,Support Processing Multiple Patient Diagnoses in the Configurable HL7 LIS Driver,2023-06-26,1
+diihl7ml,Inquiry,diihl7ml - Update multiple diagnosis parsing functionality to prevent sending duplicate diagnosis data.,2023-07-27,1
+diihl7ml,Known Issue,imdtemp not using instnum as subscript - diihl7ml,2023-11-30,1
+diioosda,Known Issue,Error 438 (Object doesn't support this property or method) on line 0 in procedure gLoadCommandBarResource of Module diioosdaModule,2023-04-06,1
+diioosda,Known Issue,"When an inventory status message is received from an automation track, the OOS driver generates an inventory status update to all other automation tracks in the system as an update",2022-01-03,1
+diiwkltl,Known Issue,Error 438 (Object doesn't support this property or method) on line 0 in procedure gLoadCommandBarResource of Module diiwkltlModule,2023-04-06,1
+dsbliasi,Inquiry,DDR dsbliasi - instrument ID,2023-07-21,1
+dsbliasi,Inquiry,dsbliasi - Update driver to support By Fluid option for Out Of Service tests.,2022-10-20,1
+eschl7ml,Inquiry,DDR eschl7ml - Single vs Multi OBR per connection,2023-08-31,1
+eschl7ml,Inquiry,DDR eschl7ml - add option for spec recv dt and build into SAC.7,2023-09-07,1
+eschl7ml,Inquiry,DDR for eschl7ml,2023-01-17,1
+eschl7ml,Inquiry,Remove logic to store and retrieve MSH by connection and sid=^imfd where sid is null.,2022-09-30,1
+eschl7ml,Inquiry,eschl7ml - Correctly use original MSH segment when building aliquot results,2023-01-17,1
+eschl7ml,Known Issue,Error 20001: Send to server failed when too many connections are defined,2023-01-06,1
+eschl7ml,Known Issue,Error in build - <UNDEFINED>getseg+37^eschl7mlbuild *inst,2022-12-14,1
+eschl7ml,Known Issue,"Error in parse - <SUBSCRIPT>consolidatedests+28^eschl7mlparse ^imtemp(203,""P"",""rec"",""T"",""EXL1<syn>EXL2<syn>RXL10<syn>RXL11<syn>RXL12<syn>RXL13<syn>RXL5<syn>RXL6<syn>RXL7<syn>RXL8<syn>RXL9<syn>SHC",2023-01-06,1
+eschl7ml,Known Issue,"Error in parse - <SUBSCRIPT>mapdest+12^eschl7mlparse ^imconfig(""config"",213,""zdestmap"","""")",2023-03-28,1
+eschl7ml,Known Issue,The grouping of tests by common destinations is no longer working all the time,2023-05-19,1
+gnppanti,Inquiry,DDR for gnppanti,2023-10-30,1
+gnppanti,Inquiry,DDR gnppanti - number separators option,2022-06-17,1
+gnppanti,Inquiry,DDR gnppanti - worklist ID as a comment,2023-09-07,1
+gnppanti,Known Issue,457=This key is already associated with an element of this collection is generated when opening the configuration screen of Gen-Probe PANTHER,2022-07-12,1
+ila4000i,Inquiry,DDR for ila4000i,2023-04-20,1
+ila4000i,Inquiry,ila4000i - Supporte demographie query in GEMWEB Server mode,2022-11-22,1
+ilalimsi,Inquiry,DDR for ilalimsi,2023-05-09,1
+ilalimsi,Known Issue,ilalimsi - Parse 'Order Reception' message as status option causes all results to be parsed as status,2023-03-14,1
+inpdmsaa,Inquiry,DDR - inpdmsaa - Process INDICES Manufacturer Record,2022-09-29,1
+inpdmsaa,Inquiry,DDR inpdmsaa - update cancel message to use patient info from request,2023-06-06,1
+menzhl7i,Inquiry,menzhl7i - change behavior with 'Append Result Index in Test Code' option,2022-09-23,1
+mgcbrz8i,Known Issue,imdtemp not using instnum as subscript - mgcbrz8i,2023-09-22,1
+mgcrangi,Inquiry,DDR - mgcrangi - Various Driver Functionality Updates,2023-05-01,1
+mgcrangi,Inquiry,mgcrangi - Add additional GXSummaryItem fields,2023-08-08,1
+mgcrangi,Inquiry,mgcrangi - Additional requested functionality,2023-06-29,1
+mgcrangi,Inquiry,mgcrangi - Parse additional fields,2023-11-30,1
+nifrem2i,Inquiry,DDR nifrem2i - add shared orders DB functionality,2023-08-18,1
+nifrem2i,Inquiry,"nifrem2i - Support M,103 record in Cennexus and DxA mode",2022-11-18,1
+nvbnpa2i,Inquiry,DDR for nvbnpa2i,2022-05-09,1
+ocdavaei,Known Issue,Images files are left open after they are processed by the driver,2023-07-14,1
+pvtastdi,Inquiry,pvtastdi - Additional updates based on testing for Healius,2023-09-01,1
+pvtastdi,Inquiry,pvtastdi - Always send '0' in M.11 for null query responses,2023-11-15,1
+pvtastmi,Known Issue,PVT ASTM Driver Doesn't Update Orders DB on Result for Status Messages if the Ordered Fluid is not null,2023-06-23,1
+quomqasi,Inquiry,Company Name Quotient BD needs to be changed to AliveDx,2023-12-20,1
+quomqasi,Inquiry,"quomqasi - Enhancements in ""Hold Results for Tests Not Requested for XX days"" functionality",2023-09-15,1
+rch8100a,Known Issue,Error 438 (Object doesn't support this property or method) on line 0 in procedure gLoadCommandBarResource of Module rch8100aModule,2023-04-06,1
+rchc8kai,Inquiry,"DDR for rchc8kai - When Holding a test for HIL results, do not send a resulted test that has yet to be released",2023-11-23,1
+rchc8kai,Inquiry,DDR rchc8kai - new error code needed,2023-11-23,1
+rchcb58i,Inquiry,DDR for rchcb58i,2023-11-23,1
+rchcb68i,Inquiry,DDR rchcb68i - rack and postion parsed from query,2023-08-24,1
+rchcproi,Inquiry,DDR rchcproi - split up indices option,2023-10-04,1
+rchcproi,Inquiry,Separate Ordered Tests by Fluid,2023-08-11,1
+rchcproi,Known Issue,Cancel message is sent in response to a query,2023-12-20,1
+rchhl7ml,Known Issue,rchhl7ml - Test comments do not build when releasing held results.,2023-03-07,1
+rchinfti,Inquiry,DDR rchinfti - sending app and others parsed from MSH,2023-09-07,1
+rchinfti,Inquiry,DDR rchinfti additional OBX pieces,2023-05-23,1
+rchinfti,Known Issue,Error in build - <UNDEFINED>OBR+14^rchinftibuild *test,2023-05-23,1
+rchinfti,Known Issue,Order Messages Contain Date/Times with no Time,2023-12-14,1
+rchpurei,Inquiry,DDR rchpurei - add new Data Alarm List entries to error mapping,2023-08-09,1
+rchpurei,Known Issue,Cancel message is sent in response to a query,2023-12-20,1
+scpx100i,Inquiry,DDR for scpx100i,2023-07-27,1
+scpx100i,Inquiry,DDR for scpx100i,2023-11-16,1
+sebphrsi,Inquiry,Add support for additional testcode/result combinations for TP results,2023-11-01,1
+sebphrsi,Inquiry,DDR for sebphrsi,2022-12-14,1
+sebphrsi,Inquiry,DDR sebphrsi - process jp-e-g files not just jpg files,2023-12-08,1
+sebphrsi,Known Issue,sebphrsi - Driver does not respect configured TP variance when building TP values from results and orders,2023-11-01,1
+sebphrsi,Known Issue,sebphrsi - Single pixel peaks cause <DIVIDE> error,2022-11-30,1
+sisixlil,Inquiry,DDR sisixlil - Inst ID not Connection Name to Sunquest,2023-05-31,1
+sisixlil,Inquiry,LIS Generate Aliquot Support for Sunquest IX,2022-08-03,1
+sisixlil,Known Issue,Driver will try to send outgoing result message indefinitely if any incoming message other than ACK is received,2023-10-13,1
+sisixlil,Known Issue,"Error:<SUBSCRIPT>buildord+25^sisixlilbuild ^imtemp(106,""P"",""ordercomments"",""N356000439"",""_Platelets Appear Decreased _Giant Plts Present _PLT Clumps Pre",2022-12-14,1
+sisixlil,Known Issue,Hold Until Complete Logic does not send Test Comments to the LIS,2022-08-03,1
+sisixlil,Known Issue,When receiving an order with a Specimen ID over two lines the T node is overwritten by second line,2023-03-11,1
+smsateli,Inquiry,DDR smsateli - null fluid type,2023-07-31,1
+syscarwi,Inquiry,DDR Caresphere - Add option and change rack/position for Sunquest,2023-09-01,1
+syscarwi,Inquiry,syscarwi - File result messages on physical DMS connection if no virtual DMS connection is present,2023-02-02,1
+syscarwi,Known Issue,Incomplete message is sent when all tests are unmapped and removed,2023-05-22,1
+syscarwi,Known Issue,syscarwi - Allow for any connection using driver to be selected in DMS config,2023-01-25,1
+syscarwi,Known Issue,syscarwi - Driver splits messages based on instrument ID,2023-01-25,1
+syscarwi,Known Issue,syscarwi - fix issues with SAC segment parsing,2023-02-02,1
+sysct90i,Inquiry,sysct90i - Additional changes for Healius,2023-09-01,1
+sysct90i,Inquiry,sysct90i - Additional changes for Healius - UI improvements,2023-11-09,1
+sysct90i,Inquiry,sysct90i - Additional changes for Healius pt.2,2023-09-01,1
+sysrouta,Inquiry,DDR sysrouta - STA.5 usable in Rules,2022-11-28,1
+sysrouta,Inquiry,DDR sysrouta - support aliquot order,2023-06-20,1
+sysrouta,Inquiry,Urgent DDR - sysrouta - build OBR.16 - Container and Fluid,2022-06-30,1
+sysxnsai,Known Issue,"Error in parse - <SUBSCRIPT>getreptype+3^sysxnsaibuild ^imorders(956,""ord_info"","""") and Error in parse - <SUBSCRIPT>R+12^sysxnsaiparse ^imconfig(""config"",1763,""abnormaltest"","""")",2023-12-30,1
+tcahl7aa,Inquiry,tcahl7aa - Improvements for Diasorin,2023-05-18,1
+tcahl7aa,Known Issue,Test priority takes over load balancing for individual connections when group is excluded from Route,2023-09-01,1
+tfclblkq,Inquiry,DDR - tfclblkq - columns blacked out,2022-05-17,1
